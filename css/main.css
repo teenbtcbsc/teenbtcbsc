@@ -1,0 +1,544 @@
+/*************************** FONTS ******************************/
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/*********************************************************/
+
+/*************************** CUSTOM PROPERTIES ******************************/
+:root {
+  --bg-primary: hsl(40, 38%, 43%);
+  --bg-primary-hard: hsl(40, 35%, 30%);
+  --bg-secondary: hsl(209, 85%, 33%);
+  --bg-tertiary: hsl(0, 0%, 30%);
+  --bg-tertiary-alpha-color: hsla(0, 0%, 30%, 0.7);
+  --black-color: hsl(0, 0%, 0%);
+  --white-color: hsl(360, 100%, 100%);
+  --green-color: hsl(124, 49%, 38%);
+  --red-color: hsl(355, 78%, 56%);
+  --khula-font: "Khula", sans-serif;
+  --montserrat-font: "Montserrat", sans-serif;
+  --border-radius: 16px;
+}
+/*********************************************************/
+
+/*************************** GENERAL STYLES ******************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--khula-font);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*********************************************************/
+
+/*************************** MAIN MENU ******************************/
+.header {
+  background-color: var(--bg-primary);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header__logo,
+.header__img {
+  height: 100%;
+}
+
+.header__button {
+  width: 3rem;
+  cursor: pointer;
+}
+
+.main-nav {
+  background-color: var(--bg-primary);
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 0;
+  transition: width 0.3s;
+  overflow: hidden;
+}
+
+.main-nav.main-nav__active {
+  width: 250px;
+}
+
+.main-nav__list,
+.main-nav__submenu-list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.main-nav__item {
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-bottom: 2px solid var(--bg-secondary);
+}
+
+.main-nav__submenu-list {
+  text-align: left;
+  padding-left: 90px;
+  background-color: var(--bg-primary-hard);
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s;
+}
+
+.main-nav__subitem {
+  padding-bottom: 16px;
+  border-left: 2px solid var(--bg-secondary);
+}
+
+.main-nav__btn-close {
+  width: 2rem;
+  margin-right: 20px;
+}
+
+.main-nav__item--flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav__link {
+  color: var(--black-color);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.main-nav__link--margin {
+  margin-left: 16px;
+}
+/*********************************************************/
+
+/*************************** WELCOME SECTION ******************************/
+.welcome {
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.welcome__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.welcome__body {
+  padding: 0 24px;
+}
+
+.welcome__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+}
+
+.welcome__paragraph {
+  font-family: var(--montserrat-font);
+  line-height: 2rem;
+  font-weight: 100;
+  padding-bottom: 16px;
+  color: var(--bg-tertiary-alpha-color);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 16px;
+}
+
+.btn {
+  text-decoration: none;
+  color: var(--black-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin-right: 16px;
+  border-radius: var(--border-radius);
+}
+
+.btn--primary {
+  background-color: var(--green-color);
+  color: var(--white-color);
+}
+
+.btn--secondary {
+  background-color: var(--red-color);
+  color: var(--white-color);
+}
+
+.btn--flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn__icon {
+  margin-right: 10px;
+}
+
+/*************************** SOCIAL MEDIA LINKS******************************/
+.social-media {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 16px;
+}
+
+/*********************************************************/
+
+/*********************************************************/
+/*************************** CROSSCHAIN GALERY ******************************/
+
+.centered_title {
+  display: flex;
+  width: 50%;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.header--border {
+  border-top: 2px solid var(--bg-secondary);
+  border-bottom: 2px solid var(--bg-secondary);
+}
+
+.crosschain__title {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.crosschain__galery {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.crosschain__image {
+  border-radius: var(--border-radius);
+}
+
+/*********************************************************/
+
+/*************************** TOKENOMICS ******************************/
+.tokenomics__chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tokenomics__text {
+  text-transform: uppercase;
+}
+
+.tokenomics_data-container {
+  margin: 0 16px;
+  text-align: center;
+}
+
+.tokenomics__data-title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.tokenomics__data-number {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0;
+  color: var(--bg-tertiary);
+  font-size: 1rem;
+  font-family: var(--montserrat-font);
+}
+
+.tokenomics_data-container:last-child {
+  margin-bottom: 32px;
+}
+/*********************************************************/
+
+/*************************** SOCIAL MEDIA SECTION ******************************/
+.social-section__title {
+  text-transform: uppercase;
+}
+
+.social-section__container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.social-section__paragraph {
+  font-family: var(--montserrat-font);
+  color: var(--bg-tertiary-alpha-color);
+  text-align: left;
+  padding: 0 24px;
+}
+
+.social-section__links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-media__logo {
+  width: 2.5rem;
+}
+/*********************************************************/
+/*************************** ROADMAP ******************************/
+.tabs {
+  overflow: hidden;
+  width: 95%;
+  max-width: 800px;
+  min-width: 320px;
+  margin: 32px auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px var(--bg-tertiary-alpha-color);
+}
+
+.controls {
+  display: flex;
+}
+
+.controls button {
+  flex-grow: 1;
+  border: none;
+  background-color: var(--bg-secondary);
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.controls button.active {
+  background-color: var(--green-color);
+  border-bottom: 3px solid #000;
+}
+.tabs-container {
+  display: flex;
+  flex-wrap: nowrap;
+  transform: translateY(0%);
+  transition: transform 0.2s;
+}
+.tab {
+  background-color: var(--bg-primary);
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.tab-content {
+  padding: 24px;
+  text-align: center;
+}
+
+.tab-title {
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  border-top: medium solid var(--bg-secondary);
+  border-bottom: medium solid var(--bg-secondary);
+}
+
+.tab-paragraph {
+  text-align: left;
+  font-family: var(--montserrat-font);
+}
+
+.tab-paragraph li {
+  margin-bottom: 16px;
+  text-transform: capitalize;
+}
+/*********************************************************/
+/*************************** FOOTER ******************************/
+.footer {
+  background-color: var(--bg-primary);
+  text-align: center;
+  color: var(--black-color);
+  text-transform: capitalize;
+}
+/*********************************************************/
+
+/*************************** MEDIA QUERIE DESKTOP ******************************/
+@media screen and (min-width: 1024px) {
+  /*************************** MENU ******************************/
+  .header {
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+  .main-nav {
+    position: static;
+    height: auto;
+    width: auto;
+  }
+
+  .main-nav__btn-close,
+  .header__btn {
+    display: none;
+  }
+  .main-nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-nav__list:first-child {
+    padding-top: 0;
+  }
+
+  .main-nav__item {
+    border: none;
+    margin: 0 24px;
+  }
+
+  .main-nav__link {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in;
+  }
+
+  .main-nav__submenu-list {
+    position: absolute;
+    height: auto;
+    z-index: 1;
+    background-color: var(--bg-primary);
+    transition: all 0.3s ease-in;
+    padding: 0;
+  }
+  ul li ul {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  ul li:hover > ul,
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .main-nav__subitem {
+    margin-bottom: 20px;
+    padding: 0 10px;
+    border-bottom: 2px solid var(--bg-secondary);
+    padding-bottom: 0;
+    border-left: none;
+  }
+
+  .main-nav__subitem:last-child {
+    padding-bottom: 0;
+  }
+
+  .main-nav__submenu--left {
+    text-align: left;
+  }
+
+  /*************************** WELCOME ******************************/
+  .welcome {
+    flex-direction: row;
+  }
+
+  .welcome__header {
+    flex-basis: 40%;
+  }
+
+  .welcome__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
+    flex-basis: 60%;
+  }
+  .welcome__title {
+    font-size: 2rem;
+  }
+
+  .welcome__paragraph {
+    font-size: 1.5rem;
+  }
+
+  /*************************** SOCIAL MEDIA LINKS******************************/
+  .social-media {
+    width: 50%;
+  }
+  .crosschain__galery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 16px;
+    width: 80%;
+  }
+
+  .crosschain__image {
+    height: 250px;
+  }
+
+  .tokenomics {
+    margin-bottom: 32px;
+  }
+
+  .tokenomics__info {
+    display: flex;
+    align-items: center;
+  }
+
+  .tokenomics__data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tokenomics__chart-container {
+    flex-basis: 30%;
+  }
+
+  .tokenomics__data {
+    flex-basis: 60%;
+    justify-self: center;
+  }
+
+  .tokenomics_data-container:last-child {
+    margin-bottom: 0px;
+  }
+
+  .social-section__links {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+/************************************************************/

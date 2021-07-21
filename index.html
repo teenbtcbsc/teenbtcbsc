@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Teen BTC | Home</title>
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <header class="header">
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--flex">
+          <img id="menu-close" class="main-nav__btn-close" src="assets/icons/menu-close.svg" alt="Menu Close">
+          <a href="#" class="main-nav__link">Home</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Tokenomics</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Community</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" id="main-nav__link--btn" class="main-nav__link">Resources</a>
+          <ul class="main-nav__submenu-list main-nav__submenu--left">
+            <li class="main-nav__subitem"><a class="main-nav__link main-nav__link--margin" href="">Branding</a></li>
+            <li class="main-nav__subitem"><a class="main-nav__link main-nav__link--margin" href="">Wallet Tracker</a>
+            </li>
+            <li class="main-nav__subitem"><a class="main-nav__link main-nav__link--margin" href="">Contract</a></li>
+            <li class="main-nav__subitem"><a class="main-nav__link main-nav__link--margin" href="">white Paper</a></li>
+          </ul>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Roadmap</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">About us</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="header__logo">
+      <img class="header__img" src="assets/images/logo.png" alt="Logo">
+    </section>
+    <section class="header__btn">
+      <img id="btn-open" class="header__button" src="assets/icons/menu-bars.svg" alt="Menu Bars Button">
+    </section>
+
+  </header>
+  <main>
+    <!-- WELCOME SECTION -->
+    <header class="welcome">
+      <section class="welcome__header">
+        <img class="welcome__img" src="assets/images/bg-welcome.jpg" alt="Background Welcome">
+      </section>
+      <section class="welcome__body">
+        <h1 class="welcome__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, saepe?</h1>
+        <p class="welcome__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda
+          possimus tempora animi eveniet ipsa amet. Deserunt maiores quibusdam eligendi maxime! Inventore a voluptas
+          quisquam.</p>
+        <div class="buttons">
+          <a class="btn btn--secondary btn--flex" href="#" target="_blank" rel="noopener noreferrer">
+            <img class="btn__icon" src="assets/icons/pancakes.svg" alt="Pancake Logo">
+            pancakeswap
+          </a>
+        </div>
+        <!-- SOCIAL MEDIA SECTION -->
+        <section class="social-media">
+          <section class="social-media__item">
+            <a class="social-media__link" href="#" target="_blank" rel="noopener noreferrer">
+              <img class="social-media__img" src="assets/icons/twitter.svg" alt="Twitter">
+            </a>
+          </section>
+          <section class="social-media__item">
+            <a class="social-media__link" href="#" target="_blank" rel="noopener noreferrer">
+              <img class="social-media__img" src="assets/icons/instagram.svg" alt="instagram">
+            </a>
+          </section>
+          <section class="social-media__item">
+            <a class="social-media__link" href="#" target="_blank" rel="noopener noreferrer">
+              <img class="social-media__img" src="assets/icons/telegram.svg" alt="telegram">
+            </a>
+          </section>
+          <section class="social-media__item">
+            <a class="social-media__link" href="#" target="_blank" rel="noopener noreferrer">
+              <img class="social-media__img" src="assets/icons/reddit.svg" alt="reddit">
+            </a>
+          </section>
+          <section class="social-media__item">
+            <a class="social-media__link" href="#" target="_blank" rel="noopener noreferrer">
+              <img class="social-media__img" src="assets/icons/medium.svg" alt="medium">
+            </a>
+          </section>
+        </section>
+      </section>
+    </header>
+    <!-- CROSSCHAIN SECTION -->
+    <section class="crosschain">
+      <div class="centered_title header--border">
+        <h1 class="crosschain__title">Crosschain</h1>
+      </div>
+      <div class="crosschain__galery">
+        <img class="crosschain__image" src="assets/images/image-1.jpg" alt="Image 1">
+        <img class="crosschain__image" src="assets/images/image-2.jpg" alt="Image 2">
+        <img class="crosschain__image" src="assets/images/image-3.jpg" alt="Image 3">
+      </div>
+    </section>
+    <!-- TOKENOMICS SECTION -->
+    <section class="tokenomics">
+      <div class="tokenomics__header">
+        <h1 class="centered_title header--border">Tokenomics</h1>
+      </div>
+      <div class="tokenomics__info">
+        <div class="tokenomics__chart-container">
+          <canvas id="chart" height="300" width="300"></canvas>
+        </div>
+        <div class="tokenomics__data">
+          <div class="tokenomics_data-container">
+            <h2 class="tokenomics__data-title">Total Supply</h2>
+            <p class="tokenomics__data-number">1,000,000,000,000,000</p>
+            <p class="tokenomics__data-number">1 Quadrillion</p>
+          </div>
+          <div class="tokenomics_data-container">
+            <h2 class="tokenomics__data-title">Burned Tokens</h2>
+            <p class="tokenomics__data-number">223,000,000,000,000</p>
+            <p class="tokenomics__data-number">223 Trillion</p>
+          </div>
+          <div class="tokenomics_data-container">
+            <h2 class="tokenomics__data-title">Fair Launch</h2>
+            <p class="tokenomics__data-number">777,000,000,000,000</p>
+            <p class="tokenomics__data-number">777 Trillion</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="social-section">
+      <header class="social-section__header">
+        <h2 class="centered_title header--border">Social Media</h2>
+      </header>
+      <section class="social-section__body">
+        <div class="social-section__container">
+          <p class="social-section__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+            suscipit
+            distinctio dolorem fugiat tempora ratione ad facere fuga quia doloremque. Rerum repudiandae laborum est
+            aliquid nam
+            deserunt quia delectus doloribus!</p>
+        </div>
+        <section class="social-section__links">
+          <section class="social-media__container">
+            <a class="social-media__link" href="#" target="_blank" rel="noopener noreferrer">
+              <img class="social-media__logo" src="assets/icons/twitter.svg" alt="Twitter">
+            </a>
+          </section>
+          <section class="social-media__container">
+            <a class="social-media__link" href="#" target="_blank" rel="noopener noreferrer">
+              <img class="social-media__logo" src="assets/icons/instagram.svg" alt="instagram">
+            </a>
+          </section>
+          <section class="social-media__container">
+            <a class="social-media__link" href="#" target="_blank" rel="noopener noreferrer">
+              <img class="social-media__logo" src="assets/icons/telegram.svg" alt="telegram">
+            </a>
+          </section>
+          <section class="social-media__container">
+            <a class="social-media__link" href="#" target="_blank" rel="noopener noreferrer">
+              <img class="social-media__logo" src="assets/icons/reddit.svg" alt="reddit">
+            </a>
+          </section>
+          <section class="social-media__container">
+            <a class="social-media__link" href="#" target="_blank" rel="noopener noreferrer">
+              <img class="social-media__logo" src="assets/icons/medium.svg" alt="medium">
+            </a>
+          </section>
+        </section>
+      </section>
+    </section>
+    <section class="roadmap">
+      <div class="roadmap__header">
+        <h1 class="centered_title header--border">Roadmap</h1>
+      </div>
+      <div class="tabs">
+        <div class="controls">
+          <button class="active">Phase 1</button>
+          <button>Phase 2</button>
+        </div>
+        <div class="tabs-container">
+          <div class="tab">
+            <div class="tab-content">
+              <h1 class="tab-title">MULTI-CHANNEL PROMOTIONS</h1>
+              <ul class="tab-paragraph">
+                <li>Fair Launched on Pancakeswap</li>
+                <li>Ownership renounced</li>
+                <li>Coin Listing Sites</li>
+                <li>Intensive social growth</li>
+                <li>Instagram promotions</li>
+                <li>Influencers campaigns</li>
+                <li>Poocoin adds</li>
+                <li>Partnertship</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tab">
+            <div class="tab-content">
+              <h1 class="tab-title">FURTHER DEVELOPMENT</h1>
+              <ul class="tab-paragraph">
+                <li>Audit by Techrate</li>
+                <li>Data feed + logo BSC</li>
+                <li>Website V2 Development</li> 
+                <li>TEENSwap-Exchangue Platform Development</li>
+                <li>Launch Staking Service Platform</li>
+                <li>Launch Store Service Platform</li>
+                <li>Stay Tuned... More to come!</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__text">TeenagerBtc Team All rights reserved &COPY; 2021 </p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"
+    integrity="sha512-5vwN8yor2fFT9pgPS9p9R7AszYaNn0LkQElTXIsZFCL7ucT8zDCAqlQXDdaqgA1mZP47hdvztBMsIoFxq/FyyQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
