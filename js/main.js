@@ -20,6 +20,13 @@
       items.style.height = `${height}px`;
     });
   })
+  // Obtener la lista de links del menu
+  const links = d.querySelectorAll(".main-nav__link");
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      document.querySelector(".main-nav").classList.remove("main-nav__active");
+    })
+  })
 })(document);
 
 // TOKENOMICS
