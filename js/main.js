@@ -22,9 +22,11 @@
   })
   // Obtener la lista de links del menu
   const links = d.querySelectorAll(".main-nav__link");
-  links.forEach(link => {
+  links.forEach((link, index) => {
     link.addEventListener('click', () => {
-      document.querySelector(".main-nav").classList.remove("main-nav__active");
+      if (index !== 3) {
+        document.querySelector(".main-nav").classList.remove("main-nav__active");
+      }
     })
   })
 })(document);
@@ -36,11 +38,16 @@
   let lineChart = new Chart(CHART, {
     type: "doughnut",
     data: {
-      labels: ["75%: Fair Launch", "2%: Development", "23%:Burn"],
+      labels: [
+        "Presale: 5.500.000 (55%)",
+        "Liquidity: 2.450.000 (24.5%)",
+        "Burned 1.850.000 (18.5%)",
+        "Dev Wallet 200.000 (2%)",
+      ],
       datasets: [
         {
-          data: [75, 2, 23],
-          backgroundColor: ["#977c44", "#0d579c", "#e63746"],
+          data: [55, 24.5, 18.5, 2],
+          backgroundColor: ["#977c44", "#0d579c", "#e63746", '#319038'],
         },
       ],
     },
@@ -53,7 +60,7 @@
             color: "rgb(0, 0, 0)",
             font: {
               size: 14,
-              weight: 700
+              weight: 700,
             },
             position: "bottom",
           },
@@ -97,3 +104,5 @@
     });
   });
 })(document)
+
+
