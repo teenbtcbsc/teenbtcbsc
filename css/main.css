@@ -121,6 +121,10 @@ img {
   border-left: 2px solid var(--bg-secondary);
 }
 
+.main-nav__subitem:first-child {
+  padding-top: 10px;
+}
+
 .main-nav__btn-close {
   width: 2rem;
   margin-right: 20px;
